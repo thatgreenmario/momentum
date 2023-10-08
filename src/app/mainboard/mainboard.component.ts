@@ -17,7 +17,7 @@ export class MainboardComponent implements OnInit {
   Do = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
   Delete = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
   Delegate = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
-  ScratchPad = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
+  ScratchPad = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep','Get to work', 'Pick up groceries', 'Go home','Get to work', 'Pick up groceries', 'Go home','Get to work', 'Pick up groceries', 'Go home','Get to work', 'Pick up groceries', 'Go home','Get to work', 'Pick up groceries', 'Go home','Get to work', 'Pick up groceries', 'Go home','Get to work', 'Pick up groceries', 'Go home','Get to work', 'Pick up groceries', 'Go home','Get to work', 'Pick up groceries', 'Go home'];
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
