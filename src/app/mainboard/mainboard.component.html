@@ -1,51 +1,47 @@
-<div cdkDropListGroup>
-    <div class="list-box">
-      <h2>Schedule</h2>
-      <div 
-        cdkDropList
-        [cdkDropListData]="Schedule"
-        class="list"
-        (cdkDropListDropped)="drop($event)">
-        <div class="list-card" *ngFor="let item of Schedule" cdkDrag>{{ item }}</div>   
-      </div>
+<mat-grid-list cols="4" rowHeight="fit">
+    <div cdkDropListGroup>
+        <mat-grid-tile [colspan]=1 [rowspan]=2>
+            <div class="list-box">
+                <h2>Scratch Pad</h2>
+                <div cdkDropList [cdkDropListData]="ScratchPad" class="list" (cdkDropListDropped)="drop($event)">
+                    <div class="list-card" *ngFor="let item of ScratchPad" cdkDrag>{{ item }}</div>
+                </div>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]=1 [rowspan]=1>
+            <div class="list-box">
+                <h2>Schedule</h2>
+                <div cdkDropList [cdkDropListData]="Schedule" class="list" (cdkDropListDropped)="drop($event)">
+                    <div class="list-card" *ngFor="let item of Schedule" cdkDrag>{{ item }}</div>
+                </div>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]=1 [rowspan]=1>
+            <div class="list-box">
+                <h2>Do</h2>
+                <div cdkDropList [cdkDropListData]="Do" class="list" (cdkDropListDropped)="drop($event)">
+                    <div class="list-card" *ngFor="let item of Do" cdkDrag>{{ item }}</div>
+                </div>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]=1 [rowspan]=2>
+            Pomodoro Timer
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]=1 [rowspan]=1>
+            <div class="list-box">
+                <h2>Delete</h2>
+                <div cdkDropList [cdkDropListData]="Delete" class="list" (cdkDropListDropped)="drop($event)">
+                    <div class="list-card" *ngFor="let item of Delete" cdkDrag>{{ item }}</div>
+                </div>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]=1 [rowspan]=1>
+            <div class="list-box">
+                <h2>Delegate</h2>
+                <div cdkDropList [cdkDropListData]="Delegate" class="list" (cdkDropListDropped)="drop($event)">
+                    <div class="list-card" *ngFor="let item of Delegate" cdkDrag>{{ item }}</div>
+                </div>
+            </div>
+        </mat-grid-tile>
     </div>
-    <div class="list-box">
-        <h2>Do</h2>
-        <div
-        cdkDropList
-        [cdkDropListData]="Do"
-        class="list"
-        (cdkDropListDropped)="drop($event)">
-        <div class="list-card" *ngFor="let item of Do" cdkDrag>{{ item }}</div>
-    </div>
-    </div>
-    <div class="list-box">
-        <h2>Delete</h2>
-        <div
-        cdkDropList
-        [cdkDropListData]="Delete"
-        class="list"
-        (cdkDropListDropped)="drop($event)">
-        <div class="list-card" *ngFor="let item of Delete" cdkDrag>{{ item }}</div>
-    </div>
-    <div class="list-box">
-        <h2>Delegate</h2>
-        <div
-        cdkDropList
-        [cdkDropListData]="Delegate"
-        class="list"
-        (cdkDropListDropped)="drop($event)">
-        <div class="list-card" *ngFor="let item of Delegate" cdkDrag>{{ item }}</div>
-    </div>
-    </div>
-    <div class="list-box">
-        <h2>Scratch Pad</h2>
-        <div
-        cdkDropList
-        [cdkDropListData]="ScratchPad"
-        class="list"
-        (cdkDropListDropped)="drop($event)">
-        <div class="list-card" *ngFor="let item of ScratchPad" cdkDrag>{{ item }}</div>
-    </div>
-    </div>
-</div>
+</mat-grid-list>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop'
+
 @Component({
   selector: 'app-mainboard',
   templateUrl: './mainboard.component.html',
