@@ -6,18 +6,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainboardComponent } from './mainboard/mainboard.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainboardComponent
+    MainboardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     DragDropModule,
-    MatGridListModule
+    MatGridListModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
