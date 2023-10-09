@@ -1,37 +1,36 @@
 <div class="main-container" cdkDropListGroup>
         <div class="scratch-pad">
-            <h2 mat-subheader>Scratch Pad</h2>
-            <!-- <h2>Scratch Pad</h2> -->
+            <div class = "card-title">Scratch Pad</div>
             <mat-selection-list #scratchpadlist cdkDropList [cdkDropListData]="ScratchPad" class="longlist" (cdkDropListDropped)="drop($event)">
                 <mat-list-option *ngFor="let item of ScratchPad" cdkDrag>{{ item }}</mat-list-option>
             </mat-selection-list>
         </div>
         <div class="scheduler">
-            <h2 mat-subheader>Schedule</h2>
+            <div class = "card-title">Schedule</div>
             <mat-selection-list #schedulelist cdkDropList [cdkDropListData]="Schedule" class="shortlist" (cdkDropListDropped)="drop($event)">
                 <mat-list-option class="list-card" *ngFor="let item of Schedule" cdkDrag>{{ item }}</mat-list-option>
             </mat-selection-list>
         </div>
         <div class="do">
-            <h2 mat-subheader>Do</h2>
+            <div class = "card-title">Do</div>
             <mat-selection-list #dolist cdkDropList [cdkDropListData]="Do" class="shortlist" (cdkDropListDropped)="drop($event)">
                 <mat-list-option class="list-card" *ngFor="let item of Do" cdkDrag>{{ item }}</mat-list-option>
             </mat-selection-list>
         </div>
         <div class="delete">
-            <h2 mat-subheader>Delete</h2>
+            <div class = "card-title">Delete</div>
             <mat-selection-list #deletelist cdkDropList [cdkDropListData]="Delete" class="shortlist" (cdkDropListDropped)="drop($event)">
                 <mat-list-option class="list-card" *ngFor="let item of Delete" cdkDrag>{{ item }}</mat-list-option>
             </mat-selection-list>
         </div>
         <div class="delegate">
-            <h2 mat-subheader>Delegate</h2>
+            <div class = "card-title">Delegate</div>
             <mat-selection-list #delegatelist cdkDropList [cdkDropListData]="Delegate" class="shortlist" (cdkDropListDropped)="drop($event)">
                 <mat-list-option class="list-card" *ngFor="let item of Delegate" cdkDrag>{{ item }}</mat-list-option>
             </mat-selection-list>
         </div>
         <div class="pomodoro longlist">
-            <h2 mat-subheader>Pomodoro</h2>
+            <div class = "card-title">Pomodoro</div>
         </div>
     </div>
 <!-- </div> -->
