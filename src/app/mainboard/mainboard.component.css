@@ -11,58 +11,30 @@
     grid-row: 1 / 3;
     max-height: 100%;
     overflow-y: scroll;
-    -ms-overflow-style: none; 
-}
-.scratch-pad::-webkit-scrollbar { 
-    width: 0;
-    height: 0;
 }
 .scheduler {
     background-color: #E9E34D;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     overflow-y: scroll;
-    -ms-overflow-style: none; 
-}
-.scheduler::-webkit-scrollbar { 
-    width: 0;
-    height: 0;
 }
 .do {
     background-color: #63BB54;
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     overflow-y: scroll;
-    overflow-y: scroll;
-    -ms-overflow-style: none; 
-}
-.do::-webkit-scrollbar { 
-    width: 0;
-    height: 0;
 }
 .delete {
     background-color: #F57C7C;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     overflow-y: scroll;
-    overflow-y: scroll;
-    -ms-overflow-style: none; 
-}
-.delete::-webkit-scrollbar { 
-    width: 0;
-    height: 0;
 }
 .delegate {
     background-color: #3053AE;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     overflow-y: scroll;
-    overflow-y: scroll;
-    -ms-overflow-style: none; 
-}
-.delegate::-webkit-scrollbar { 
-    width: 0;
-    height: 0;
 }
 .pomodoro {
     grid-column: 4 / 5;
